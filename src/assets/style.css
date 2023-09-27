@@ -1,0 +1,63 @@
+.table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    table-layout: fixed;
+    width: 100%;
+    overflow: scroll;
+}
+
+.table tr {
+    border-radius: 20px;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 10px;
+}
+
+.table td:nth-child(1),
+/* .table th:nth-child(2), */
+.table td:nth-child(2),
+/* .table th:nth-child(3), */
+.table td:nth-child(3),
+/* .table th:nth-child(4), */
+.table td:nth-child(4),
+/* .table th:nth-child(5), */
+.table td:nth-child(5) {
+    background-color: white;
+}
+.table th:nth-child(4){
+    width: 30%;
+}
+.table th:nth-child(2){
+    width: 19%;
+}
+.table th:nth-child(3){
+    width: 19%;
+}
+
+.table th:nth-child(1) {
+    width: 25%;
+}
+
+.table td:nth-child(5) {
+    margin-right: auto !important;
+}
+
+
+.table tr td:first-child { border-top-left-radius: 10px; }
+.table tr td:first-child { border-bottom-left-radius: 10px; }
+
+.table tr td:last-child { border-top-right-radius: 10px; }
+.table tr td:last-child { border-bottom-right-radius: 10px; }
+
+.table tr th:first-child { border-top-left-radius: 10px; }
+.table tr th:first-child { border-bottom-left-radius: 10px; }
+
+.table tr th:last-child { border-top-right-radius: 10px; }
+.table tr th:last-child { border-bottom-right-radius: 10px; }
+
+
+
+.table tr td:first-child { border-left: 4px solid rgb(98, 104, 220); }
