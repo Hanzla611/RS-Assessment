@@ -69,7 +69,7 @@ function Login() {
 
         if (existingUser) {
           // User with the same email already exists, show an alert
-          alert("User with this email already exists");
+          toast.error("User with this email already exists");
           return;
         }
 
