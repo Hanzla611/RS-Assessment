@@ -13,7 +13,7 @@ function TopSection() {
             </p>
           </div>
           <div className="right-block">
-            <button className="border-2 border-purple-800 text-purple-800 font-bold py-1 px-4 rounded md:py-2 md:px-6 sm:px-2">
+            <button className="border-2 border-purple-800 text-purple-800 font-bold py-1 px-1 rounded md:py-2 md:px-6 sm:px-2">
               + Add User
             </button>
           </div>

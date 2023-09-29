@@ -33,7 +33,7 @@ function Browse() {
   }, []);
   console.log(drawerData);
   return (
-    <div className="bg-gray-200 h-screen w-full mx-auto p-4 px-12">
+    <div className="bg-gray-200 h-screen w-full mx-auto p-4 px-6 overflow-x-auto sm:px-12 md:px-12">
       <TopSection />
       <div className="mt-2">
         <BottomSection toggleDrawer={toggleDrawer} userData={userData} />
