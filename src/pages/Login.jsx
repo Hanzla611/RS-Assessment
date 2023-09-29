@@ -3,6 +3,7 @@ import loginImg from "../assets/login-screen.png";
 import Logo from "../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import { checkValidData } from "../utils/validate";
+import toast from "react-hot-toast";
 const backgroundImageStyle = {
   backgroundImage: `url(${loginImg})`,
 };
@@ -43,7 +44,7 @@ function Login() {
           navigate("/browse");
         } else {
           // User does not exist, show an alert and navigate to the login page
-          alert("User does not exist");
+          toast.error("User does not exist");
           navigate("/");
         }
       }
@@ -113,33 +114,45 @@ function Login() {
             >
               <div className="pb-2 pt-4">
                 {!isLogin && (
+                  <>
+                  <label className="absolute text-left flex -mt-2.5 ml-2 bg-white px-1 text-sm  text-gray-500">Username</label>
                   <input
                     ref={name}
                     type="text"
                     name="Username"
                     id="name"
-                    placeholder="Username"
-                    className="block mb-6 outline-none border-2 w-full p-3 text-md text-black rounded"
+                    placeholder=""
+                    className="block mb-6 outline-violet-950 border-2 w-full p-3 text-md text-black rounded"
                   />
+                  
+                  </>
                 )}
+                <>
+                <label className="absolute text-left flex -mt-2 ml-2 bg-white px-1  text-gray-500 text-sm">Email</label>
                 <input
                   ref={email}
                   type="email"
                   name="email"
                   id="email"
-                  placeholder="Email"
-                  className="block outline-none border-2 w-full p-3 text-md text-black rounded"
+                  placeholder=""
+                  className="block outline-violet-950 border-2 w-full p-3 text-md text-black rounded"
                 />
+                </>
+             
               </div>
+
+              
               <div className="pb-2 pt-4">
+              <label className="absolute text-left flex -mt-2.5 ml-2 bg-white px-1 text-sm  text-gray-500">Password</label>
                 <input
                   ref={password}
-                  className="block outline-none border-2 w-full p-3 text-md rounded text-black"
+                  className="block outline-violet-950 border-2 w-full p-3 text-md rounded text-black"
                   type="password"
                   name="password"
                   id="password"
-                  placeholder="Password"
+                  placeholder=""
                 />
+
               </div>
               <div className="text-left">
                 <p className="text-red-600 mb-4 text-xs">{errorMessage}</p>

@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from "react";
+import { Toaster } from "react-hot-toast";
 import { createBrowserRouter } from "react-router-dom";
 const Browse = lazy(() => import("./pages/Browse"));
 const Login = lazy(() => import("./pages/Login"));
@@ -17,7 +18,8 @@ function Body() {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-    <RouterProvider router={appRouter} />
+      <Toaster />
+      <RouterProvider router={appRouter} />
     </Suspense>
   );
 }

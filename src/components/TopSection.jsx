@@ -1,5 +1,5 @@
-import React from 'react'
-import SearchInput from './SearchInput'
+import React from "react";
+import SearchInput from "./SearchInput";
 
 function TopSection() {
   return (
@@ -13,7 +13,7 @@ function TopSection() {
             </p>
           </div>
           <div className="right-block">
-            <button className="border-2 border-purple-800 text-purple-800 font-bold py-1 px-4 rounded">
+            <button className="border-2 border-purple-800 text-purple-800 font-bold py-1 px-4 rounded md:py-2 md:px-6 sm:px-2">
               + Add User
             </button>
           </div>
@@ -40,7 +40,7 @@ function TopSection() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default TopSection
+export default TopSection;
