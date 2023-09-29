@@ -59,10 +59,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Happy coding! 🚀
 
-javascript
-Copy code
-
-You should replace `your-username` and `your-react-vite-project` with your actual information and save this content in your project's README.md file.
 
 
 
