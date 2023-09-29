@@ -23,7 +23,7 @@ This template provides a minimal setup to get started with React in Vite, a fast
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/your-react-vite-project.git
+   git clone https://github.com/Hanzla611/RS-Assessment.git
 
 2. cd your-react-vite-project
 
